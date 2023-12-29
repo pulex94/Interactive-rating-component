@@ -1,4 +1,4 @@
-let ratingScore;
+let ratingScore = 0;
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".btn-value");
 
@@ -19,6 +19,9 @@ const container = document.querySelector(".container");
 const thankYou = document.querySelector(".thank-you");
 /* ------------------ */
 confirmBtn.addEventListener("click", () => {
+  if (ratingScore === 0) {
+    return;
+  }
   p.innerHTML = "You selected " + ratingScore + " out of 5";
   rating.appendChild(p);
   thankYou.style.display = "flex";

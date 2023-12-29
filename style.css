@@ -56,7 +56,7 @@ p {
 .btn-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .btn-container button {
   width: 50px;
@@ -90,6 +90,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   transition: ease-in-out 0.2s;
+  font-weight: 700;
 }
 
 .btn-submit:hover {
